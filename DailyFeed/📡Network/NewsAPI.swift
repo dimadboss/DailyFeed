@@ -15,7 +15,7 @@ enum NewsAPI {
     case search(query: String)
     
     static var baseURL = URLComponents(string: "https://newsapi.org")
-    static let apiToken = "8e58842e74f2453bb5e6e3845b386a81"
+    static let apiToken = "f35d23655ef94303a0e92b9c5786b71e"
     
     //NewsAPI.org API Endpoints
     var url: URL? {
@@ -67,6 +67,12 @@ enum NewsAPI {
                 guard error == nil else { seal.reject(error!); return }
                 
                 guard let data = data else { seal.reject(error!); return }
+                
+                if let string = String(bytes: data, encoding: .utf8) {
+                    print(string)
+                } else {
+                    print("not a valid UTF-8 sequence")
+                }
                 
                 do {
                     let jsonFromData =  try JSONDecoder().decode(Articles.self, from: data)

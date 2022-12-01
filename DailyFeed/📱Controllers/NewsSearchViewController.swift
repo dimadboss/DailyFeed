@@ -175,7 +175,8 @@ class NewsSearchViewController: UIViewController, UICollectionViewDelegate, UICo
                 }.done { result in
                     self.searchItems = result.articles
                 }.catch(on: .main) { err in
-                    self.showError(err.localizedDescription)
+                  //  self.showError(err.localizedDescription)
+                    print(err)
             }
         }
     }

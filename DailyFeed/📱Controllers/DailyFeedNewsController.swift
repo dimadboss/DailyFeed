@@ -146,7 +146,9 @@ class DailyFeedNewsController: UIViewController {
                 self.spinningActivityIndicator.stop()
                 self.refreshControl.endRefreshing()
                 }.catch(on: .main) { err in
-                self.showError(err.localizedDescription)
+                //self.showError(err.localizedDescription)
+                    print("daily feed error")
+                    print(err)
             }
         }
     }

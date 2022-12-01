@@ -253,9 +253,11 @@ class NewsSourceViewController: UIViewController, UITableViewDelegate, UITableVi
         }.ensure {
             self.setupSpinner(hidden: true)
         }.catch { err in
-            self.showError(err.localizedDescription) { _ in
-                self.dismiss(animated: true, completion: nil)
-            }
+//            self.showError(err.localizedDescription) { _ in
+//                self.dismiss(animated: true, completion: nil)
+//            }
+            print("news source error")
+            print(err)
         }
     }
 

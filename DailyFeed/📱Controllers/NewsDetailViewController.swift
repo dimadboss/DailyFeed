@@ -91,10 +91,7 @@ class NewsDetailViewController: UIViewController, SFSafariViewControllerDelegate
     @IBOutlet weak var swipeLeftButton: UIButton! {
         didSet {
             swipeLeftButton.layer.cornerRadius = 10.0
-            guard let publishedDate = receivedNewsItem?.publishedAt.dateFromTimestamp?.relativelyFormatted(short: false) else {
-                return swipeLeftButton.setTitle("Read More...", for: .normal)
-            }
-            swipeLeftButton.setTitle("\(publishedDate) • Read More...", for: .normal)
+            swipeLeftButton.setTitle("Open full text", for: .normal)
             switch Reach().connectionStatus() {
             case .unknown, .offline:
                 swipeLeftButton.isEnabled = false
@@ -197,7 +194,7 @@ class NewsDetailViewController: UIViewController, SFSafariViewControllerDelegate
             let bookmarkactivity = BookmarkActivity()
             
             bookmarkactivity.bookMarkSuccessful = {
-                self.showErrorWithDelay("Bookmarked Successfully!")
+                self.showErrorWithDelay("Added to Favourites Successfully!")
             }
             
             let activityVC = UIActivityViewController(activityItems: [shareURL, articleImage, articleToBookmarkData],

@@ -116,19 +116,19 @@ extension BookmarkViewController: UICollectionViewDelegate, UICollectionViewData
 extension BookmarkViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        let str = "No Articles Bookmarked"
+        let str = "No Favorite Articles"
         let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)]
         return NSAttributedString(string: str, attributes: attrs)
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        let str = "Your Bookmarks will appear here."
+        let str = ""
         let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)]
         return NSAttributedString(string: str, attributes: attrs)
     }
     
     func image(forEmptyDataSet scrollView: UIScrollView) -> UIImage? {
-        return #imageLiteral(resourceName: "bookmark")
+        return nil
     }
     
     func imageTintColor(forEmptyDataSet scrollView: UIScrollView) -> UIColor? {

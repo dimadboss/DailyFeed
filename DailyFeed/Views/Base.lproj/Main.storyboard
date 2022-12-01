@@ -78,24 +78,24 @@
             <objects>
                 <viewController storyboardIdentifier="NewsDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1yk-sL-YYJ" customClass="NewsDetailViewController" customModule="DailyFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jP3-ch-vay">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="0OI-zn-fNx" customClass="TSImageView" customModule="DailyFeed" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="-44" width="320" height="247"/>
+                                <rect key="frame" x="0.0" y="-44" width="320" height="227"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQI-4V-1Zg">
-                                <rect key="frame" x="0.0" y="203" width="320" height="0.5"/>
+                                <rect key="frame" x="0.0" y="183" width="320" height="0.5"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="XVn-Hn-k5B"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kd6-Lt-aaU">
-                                <rect key="frame" x="13" y="212.5" width="297" height="35.5"/>
+                                <rect key="frame" x="13" y="192.5" width="297" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaK-t0-JZk">
                                         <rect key="frame" x="0.0" y="0.0" width="297" height="17"/>
@@ -131,20 +131,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DailyFeed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrX-Mk-iAW">
-                                <rect key="frame" x="10" y="518" width="300" height="40"/>
+                                <rect key="frame" x="10" y="498" width="300" height="40"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw2-wF-wcO">
-                                <rect key="frame" x="10" y="513" width="300" height="50"/>
+                                <rect key="frame" x="10" y="493" width="300" height="50"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bLx-rp-keU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" title="59 Minutes ago • Read More...">
-                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Open full text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
@@ -168,14 +168,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLh-Pa-l9j">
-                                <rect key="frame" x="0.0" y="213" width="3" height="17"/>
+                                <rect key="frame" x="0.0" y="193" width="3" height="17"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="3" id="JRf-sv-EUa"/>
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCH-mL-TaE">
-                                <rect key="frame" x="10" y="258" width="300" height="250"/>
+                                <rect key="frame" x="10" y="238" width="300" height="250"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" name="detailLabelColor"/>
@@ -186,7 +186,7 @@
                                 </variation>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwB-pn-gnh">
-                                <rect key="frame" x="279" y="183.5" width="25" height="25"/>
+                                <rect key="frame" x="279" y="163.5" width="25" height="25"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DwB-pn-gnh" secondAttribute="height" multiplier="1:1" id="c5h-tu-r9l"/>
@@ -334,7 +334,7 @@
             </objects>
             <point key="canvasLocation" x="506" y="436"/>
         </scene>
-        <!--Bookmarks-->
+        <!--Favorites-->
         <scene sceneID="NqL-UD-vrJ">
             <objects>
                 <viewController storyboardIdentifier="BookmarkViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vjv-Em-Web" customClass="BookmarkViewController" customModule="DailyFeed" customModuleProvider="target" sceneMemberID="viewController">
@@ -367,7 +367,7 @@
                             <constraint firstItem="IME-lT-8Hu" firstAttribute="leading" secondItem="trh-2A-9C1" secondAttribute="leading" constant="8" id="mUz-Nu-SoY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Bookmarks" id="m7o-Sj-Jyi"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="m7o-Sj-Jyi"/>
                     <connections>
                         <outlet property="bookmarkCollectionView" destination="IME-lT-8Hu" id="PRo-Ro-xdd"/>
                         <segue destination="1yk-sL-YYJ" kind="presentation" identifier="bookmarkSourceSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="w5m-To-g4E"/>
@@ -398,11 +398,11 @@
             </objects>
             <point key="canvasLocation" x="2229" y="1364"/>
         </scene>
-        <!--Bookmarks-->
+        <!--Navigation Controller-->
         <scene sceneID="zGn-92-Mtf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HC8-gY-Lh2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bookmarks" image="bookmark" id="0Ct-8c-rLu"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="0Ct-8c-rLu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KHf-fB-BcK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -417,11 +417,11 @@
             </objects>
             <point key="canvasLocation" x="129" y="1269"/>
         </scene>
-        <!--Search-->
+        <!--Navigation Controller-->
         <scene sceneID="fsM-ei-cII">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wPa-QW-0Ao" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="search" id="rhJ-Xj-t8X"/>
+                    <tabBarItem key="tabBarItem" title="" image="search" id="rhJ-Xj-t8X"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="7au-z3-UkT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
@@ -438,13 +438,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w5m-To-g4E"/>
+        <segue reference="gmI-5G-sff"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="back" width="36" height="36"/>
-        <image name="bookmark" width="24" height="24"/>
         <image name="country" width="24" height="24"/>
         <image name="filter" width="24" height="24"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="language" width="24" height="24"/>
         <image name="search" width="24" height="24"/>
         <image name="share" width="24" height="24"/>
@@ -459,9 +459,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

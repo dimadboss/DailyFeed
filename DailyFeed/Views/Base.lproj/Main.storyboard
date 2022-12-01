@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="width" secondItem="8TS-FQ-g23" secondAttribute="height" multiplier="1:1" id="8NI-Uy-cpk"/>
                                     <constraint firstAttribute="height" constant="50" id="Igk-oT-raP"/>
                                 </constraints>
-                                <state key="normal" image="share"/>
+                                <state key="normal" image="heart.fill" catalog="system"/>
                                 <connections>
                                     <action selector="shareArticle:" destination="1yk-sL-YYJ" eventType="touchUpInside" id="cSy-kP-dpx"/>
                                 </connections>
@@ -378,7 +378,6 @@
         <image name="back" width="36" height="36"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="search" width="24" height="24"/>
-        <image name="share" width="24" height="24"/>
         <namedColor name="detailLabelColor">
             <color red="0.43500000238418579" green="0.44299998879432678" blue="0.47499999403953552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

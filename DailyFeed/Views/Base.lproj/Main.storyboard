@@ -10,69 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sources-->
-        <scene sceneID="rtQ-Cl-8QZ">
-            <objects>
-                <viewController storyboardIdentifier="NewsSourceViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bjF-yu-jQX" customClass="NewsSourceViewController" customModule="DailyFeed" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yk7-G7-fGr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z6a-Xw-k4Z">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SourceCell" rowHeight="60" id="XSz-yC-ada">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XSz-yC-ada" id="aKz-78-YEH">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="bjF-yu-jQX" id="YpM-O0-c1X"/>
-                                    <outlet property="delegate" destination="bjF-yu-jQX" id="ho7-ij-fRf"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="XnL-HH-KUJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="z6a-Xw-k4Z" firstAttribute="leading" secondItem="Yk7-G7-fGr" secondAttribute="leading" id="5up-eH-lGN"/>
-                            <constraint firstItem="z6a-Xw-k4Z" firstAttribute="top" secondItem="XnL-HH-KUJ" secondAttribute="top" id="PzI-Mf-J5p"/>
-                            <constraint firstAttribute="trailing" secondItem="z6a-Xw-k4Z" secondAttribute="trailing" id="YPc-3S-cUd"/>
-                            <constraint firstAttribute="bottom" secondItem="z6a-Xw-k4Z" secondAttribute="bottom" id="rSW-xS-01I"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Sources" id="r66-GT-LNg">
-                        <rightBarButtonItems>
-                            <barButtonItem image="search" style="plain" id="JQy-W2-43I">
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </barButtonItem>
-                            <barButtonItem image="filter" id="ez7-e4-Tv8">
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </barButtonItem>
-                            <barButtonItem image="language" id="B3l-X5-D5X">
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </barButtonItem>
-                            <barButtonItem image="country" id="1KR-Je-8di" userLabel="Country Button">
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="sourceTableView" destination="z6a-Xw-k4Z" id="oa8-zs-3hI"/>
-                        <segue destination="JIT-8k-TPL" kind="unwind" identifier="sourceUnwindSegue" unwindAction="unwindToDailyNewsFeed:" id="NX9-nv-rBf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAK-n4-oSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="JIT-8k-TPL" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="3740" y="1344.3778110944529"/>
-        </scene>
         <!--News Detail View Controller-->
         <scene sceneID="215-4y-uX3">
             <objects>
@@ -390,9 +327,6 @@
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999999999999996" contentMode="scaleToFill" id="0r4-84-hDt">
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
-                    <connections>
-                        <segue destination="bjF-yu-jQX" kind="relationship" relationship="rootViewController" id="557-vv-NOU"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwj-Al-Uyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -442,10 +376,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="back" width="36" height="36"/>
-        <image name="country" width="24" height="24"/>
-        <image name="filter" width="24" height="24"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="language" width="24" height="24"/>
         <image name="search" width="24" height="24"/>
         <image name="share" width="24" height="24"/>
         <namedColor name="detailLabelColor">

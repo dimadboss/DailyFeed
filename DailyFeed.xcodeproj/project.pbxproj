@@ -182,10 +182,10 @@
 			isa = PBXGroup;
 			children = (
 				1DAAF127242E55C300DF364F /* DailyFeed.entitlements */,
-				953C685121A070A5006750F8 /* 📦Model */,
+				953C685121A070A5006750F8 /* Model */,
 				953C685221A070CD006750F8 /* Views */,
-				953C685321A070EB006750F8 /* 📱Controllers */,
-				953C685621A07186006750F8 /* 📡Network */,
+				953C685321A070EB006750F8 /* Controllers */,
+				953C685621A07186006750F8 /* Network */,
 				953C685521A07161006750F8 /* Cells */,
 				953C685421A0713C006750F8 /* Supporting Files */,
 				06D04C2A1E1248DB0013B4AA /* Info.plist */,
@@ -219,7 +219,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		953C685121A070A5006750F8 /* 📦Model */ = {
+		953C685121A070A5006750F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				325313892939250A00D700B3 /* DailySourceModel.swift */,
@@ -227,7 +227,7 @@
 				064FA8F91E5DA98000693D12 /* DailyFeedRealmModel.swift */,
 				1DD3CDCC227F14AF00C374BC /* NewsSourceParameters.swift */,
 			);
-			path = "📦Model";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		953C685221A070CD006750F8 /* Views */ = {
@@ -241,7 +241,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		953C685321A070EB006750F8 /* 📱Controllers */ = {
+		953C685321A070EB006750F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				064FA8ED1E4C95B200693D12 /* BookmarkViewController.swift */,
@@ -250,7 +250,7 @@
 				063504FB1E151C4A002510B0 /* DFSafariViewController.swift */,
 				1D98E963228B1AF60090B722 /* NewsSearchViewController.swift */,
 			);
-			path = "📱Controllers";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		953C685421A0713C006750F8 /* Supporting Files */ = {
@@ -290,12 +290,12 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		953C685621A07186006750F8 /* 📡Network */ = {
+		953C685621A07186006750F8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				06CAC5971E28A3D600EF72BB /* NewsAPI.swift */,
 			);
-			path = "📡Network";
+			path = Network;
 			sourceTree = "<group>";
 		};
 		953C685921A071D0006750F8 /* Lottie Assets */ = {

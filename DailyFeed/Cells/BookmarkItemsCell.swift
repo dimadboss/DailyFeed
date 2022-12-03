@@ -2,7 +2,6 @@
 //  BookmarkItemsCell.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 14/02/17.
 //
 
 import UIKit

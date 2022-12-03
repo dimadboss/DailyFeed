@@ -2,7 +2,6 @@
 //  NewsAPI.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 13/01/17.
 //
 
 import Foundation

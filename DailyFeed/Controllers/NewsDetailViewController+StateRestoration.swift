@@ -2,7 +2,6 @@
 //  NewsDetailViewController+StateRestoration.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 31/01/17.
 //
 
 import UIKit

@@ -2,7 +2,6 @@
 //  BookmarkActivity.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 10/02/17.
 //
 
 import UIKit

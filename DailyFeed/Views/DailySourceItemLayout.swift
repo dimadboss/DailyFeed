@@ -2,7 +2,6 @@
 //  DailySourceItemLayout.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 20/01/17.
 //
 
 import UIKit

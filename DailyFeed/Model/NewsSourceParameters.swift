@@ -2,7 +2,6 @@
 //  NewsSourceRequestParameters.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 05/05/19.
 //
 
 import Foundation

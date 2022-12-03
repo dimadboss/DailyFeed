@@ -2,7 +2,6 @@
 //  DailyFeedRealmModel.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 22/02/17.
 //
 
 import Foundation

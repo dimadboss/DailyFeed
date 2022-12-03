@@ -2,7 +2,6 @@
 //  TSSpinnerView
 //  DailyFeed
 //
-//  Created by Sumit Paul on 03/01/17.
 //
 
 import UIKit

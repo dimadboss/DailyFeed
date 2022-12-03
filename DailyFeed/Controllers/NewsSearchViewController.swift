@@ -2,7 +2,6 @@
 //  NewsSearchViewController.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 14/05/19.
 //
 
 import UIKit

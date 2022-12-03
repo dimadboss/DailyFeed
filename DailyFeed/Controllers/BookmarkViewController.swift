@@ -2,7 +2,6 @@
 //  BookmarkViewController.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 09/02/17.
 //
 
 import UIKit

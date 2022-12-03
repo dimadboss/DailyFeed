@@ -2,7 +2,6 @@
 //  Serializable.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 13/06/17.
 //
 
 import Foundation

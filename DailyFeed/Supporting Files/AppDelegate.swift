@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 27/12/16.
 //
 
 import UIKit

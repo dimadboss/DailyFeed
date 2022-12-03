@@ -2,7 +2,6 @@
 //  DFSafariViewController.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 29/12/16.
 //
 
 import UIKit

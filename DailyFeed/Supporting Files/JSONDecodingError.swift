@@ -2,8 +2,6 @@
 //  DecodingError+Extension.swift
 //  DailyFeed
 //
-//  Created by Sumit Paul on 20/06/17.
-//  Copyright © 2017 llc. All rights reserved.
 //
 
 import Foundation

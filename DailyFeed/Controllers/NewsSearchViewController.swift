@@ -15,7 +15,7 @@ class NewsSearchViewController: UIViewController, UICollectionViewDelegate, UICo
         return searchCollectionView
     }
     
-
+    
     // MARK: - IBOutlets
     @IBOutlet weak private var searchCollectionView: UICollectionView!
     
@@ -31,8 +31,8 @@ class NewsSearchViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     private var selectedCell = UICollectionViewCell()
-
-
+    
+    
     private var resultsSearchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
         controller.obscuresBackgroundDuringPresentation = false
@@ -86,7 +86,7 @@ class NewsSearchViewController: UIViewController, UICollectionViewDelegate, UICo
     // MARK: - Setup TableView
     private func setupCollectionView() {
         searchCollectionView.register(R.nib.dailyFeedItemCell)
-        searchCollectionView?.collectionViewLayout = UIDevice.current.userInterfaceIdiom == .phone ? DailySourceItemLayout() : DailySourceItemiPadLayout()
+        searchCollectionView?.collectionViewLayout =  DailySourceItemLayout()
         searchCollectionView.emptyDataSetDelegate = self
         searchCollectionView.emptyDataSetSource = self
     }
@@ -123,7 +123,7 @@ class NewsSearchViewController: UIViewController, UICollectionViewDelegate, UICo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.dailyFeedItemCell, for: indexPath)
         cell?.configure(with: searchItems[indexPath.row], ltr: false)
         return cell!
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -148,7 +148,7 @@ class NewsSearchViewController: UIViewController, UICollectionViewDelegate, UICo
             }
         }
     }
-
+    
     
     // MARK: - SearchBar Delegate
     
@@ -164,7 +164,7 @@ class NewsSearchViewController: UIViewController, UICollectionViewDelegate, UICo
     // MARK: - Load data from network
     func loadNews(with query: String) {
         switch Reach().connectionStatus() {
-            
+        
         case .offline, .unknown:
             self.showError("Internet connection appears to be offline", message: nil)
         case .online(_):
@@ -172,15 +172,15 @@ class NewsSearchViewController: UIViewController, UICollectionViewDelegate, UICo
             
             firstly {
                 NewsAPI.searchNews(with: query)
-                }.done { result in
-                    self.searchItems = result.articles
-                }.catch(on: .main) { err in
-                  //  self.showError(err.localizedDescription)
-                    print(err)
+            }.done { result in
+                self.searchItems = result.articles
+            }.catch(on: .main) { err in
+                //  self.showError(err.localizedDescription)
+                print(err)
             }
         }
     }
-
+    
 }
 
 
@@ -188,17 +188,10 @@ extension NewsSearchViewController {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         
-        switch (traitCollection.verticalSizeClass, traitCollection.horizontalSizeClass) {
-            
-        case (.regular, .regular), (.compact, .regular), (.compact, .compact):
-            searchCollectionView?.collectionViewLayout.invalidateLayout()
-            searchCollectionView?.collectionViewLayout = DailySourceItemiPadLayout()
-            
-        default:
-            searchCollectionView?.collectionViewLayout.invalidateLayout()
-            searchCollectionView?.collectionViewLayout = DailySourceItemLayout()
-            
-        }
+        searchCollectionView?.collectionViewLayout.invalidateLayout()
+        searchCollectionView?.collectionViewLayout = DailySourceItemLayout()
+        
+        
     }
 }
 

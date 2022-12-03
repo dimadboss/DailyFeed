@@ -39,22 +39,6 @@ final class DailyFeedModel: NSObject, Serializable {
 
 // MARK :- NSProvider read/write method implementations
 
-extension DailyFeedModel: NSItemProviderWriting {
-    
-    static var writableTypeIdentifiersForItemProvider: [String] = [DailyFeedModelUTI.kUUTTypeDailyFeedModel, kUTTypeUTF8PlainText as String]
-    
-    func loadData(withTypeIdentifier typeIdentifier: String, forItemProviderCompletionHandler completionHandler: @escaping (Data?, Error?) -> Void) -> Progress? {
-        if typeIdentifier == DailyFeedModelUTI.kUUTTypeDailyFeedModel {
-            completionHandler(self.serialize(), nil)
-        } else if typeIdentifier == kUTTypeUTF8PlainText as String {
-            completionHandler(self.url?.data(using: .utf8), nil)
-        } else {
-            completionHandler(nil, DailyFeedModelError.invalidDailyFeedModel)
-        }
-        return nil
-    }
-}
-
 extension DailyFeedModel: NSItemProviderReading {
     
     static var readableTypeIdentifiersForItemProvider: [String] {

@@ -8,9 +8,6 @@ import Foundation
 import PromiseKit
 
 enum NewsAPI {
-    
-    case articles(source: String)
-    case sources(category: String?, language: String?, country: String?)
     case search(query: String)
     
     static var baseURL = URLComponents(string: "https://newsapi.org")
@@ -19,23 +16,6 @@ enum NewsAPI {
     //NewsAPI.org API Endpoints
     var url: URL? {
         switch self {
-        case .articles(let source):
-            let lSource = source
-            NewsAPI.baseURL?.path = "/v2/top-headlines"
-            NewsAPI.baseURL?.queryItems = [URLQueryItem(name: "sources", value: lSource),
-                                           URLQueryItem(name: "apiKey", value: NewsAPI.apiToken)]
-            guard let url = NewsAPI.baseURL?.url else { return nil }
-            return url
-            
-        case .sources(let category, let language, let country):
-            NewsAPI.baseURL?.path = "/v2/sources"
-            NewsAPI.baseURL?.queryItems = [URLQueryItem(name: "category", value: category),
-                                           URLQueryItem(name: "language", value: language),
-                                           URLQueryItem(name: "country", value: country),
-                                           URLQueryItem(name: "apiKey", value: NewsAPI.apiToken)]
-            guard let url = NewsAPI.baseURL?.url else { return nil }
-            return url
-            
         case .search(let query):
             NewsAPI.baseURL?.path = "/v2/everything"
             NewsAPI.baseURL?.queryItems = [URLQueryItem(name: "q", value: query),

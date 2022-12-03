@@ -29,11 +29,6 @@ final class DailyFeedModel: NSObject, Serializable {
     public var urlToImage: String?
     public var articleDescription: String?
     public var url: String?
-    
-    private enum CodingKeys: String, CodingKey {
-        case articleDescription = "description"
-        case title, author, publishedAt, urlToImage, url
-    }
 }
 
 // MARK :- NSProvider read/write method implementations
